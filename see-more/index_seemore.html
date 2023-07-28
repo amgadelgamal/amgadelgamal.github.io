@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="style_seemore.css">
+    <script src="https://kit.fontawesome.com/0fce78ac1d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <!----<div id="progress-message">
+            <h2> Work in progress... ⏳😊</h2>
+        </div>---->
+        <!----<div class="work-list" id="blurred-content">--->
+        <div class="work-list">
+            <div class="work">
+                <img src="cloudnerd-demo.png">
+                <div class="layer">
+                    <h3>Weather Forecasting App</h3>
+                    <p>Cloudnerd is a machine learning based web application that predicts the weahter by scanning clouds.
+                        Give it a try below!</p>
+                        <a href="https://welcome-to-cloudnerd.web.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="shazoom.png">
+                <div class="layer">
+                    <h3>Lyric Recognition Web App</h3>
+                    <p>Shazoom is a speech recognition user interface that identifies user-sung songs
+                        and retrieves top matches. Give it a try on my GitHub below!
+                    </p>
+                        <a href="https://github.com/amgadelgamal/Shazoom.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="chatbot.png">
+                <div class="layer">
+                    <h3>Diet-Based Restaurant Locator Chatbot</h3>
+                    <p>Jou'an is an interactive chatbot that identifies user dietry preferences and locates
+                        nearby suitable restaurants. Give it a try on my GitHub below!
+                    </p>
+                        <a href="https://github.com/amgadelgamal/Jou-an.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="blocky.png">
+                <div class="layer">
+                    <h3>Blocky: A Game of Blocks</h3>
+                    <p>Blocky, a Java-developed multiplayer game, engages players in strategic block manipulation on a dynamic grid to outscore rivals. It masterfully blends strategy, real-time competition, 
+                        and technical finesse. Check it out on my GitHub below!
+                    </p>
+                        <a href="https://github.com/amgadelgamal/Jou-an.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="snake-game.png">
+                <div class="layer">
+                    <h3>The Caterpillar Game</h3>
+                    <p>The Caterpillar Game, a Java-built spin on a classic, challenges players to steer a growing creature while avoiding obstacles. It's a fun and engaging game, merging OOP principles and robust backend 
+                        handling. Check it out on my GitHub below!
+                    </p>
+                        <a href="https://github.com/amgadelgamal/Jou-an.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="pgm-image.png">
+                <div class="layer">
+                    <h3>PGM Image Processor</h3>
+                    <p>A Python program that manipulates PGM images through various operations such as flipping, cropping, and inverting. This tool uses File IO and complex string manipulation. 
+                        Check it out on my GitHub below!
+                    </p>
+                        <a href="https://github.com/amgadelgamal/Jou-an.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="music-player.jpg">
+                <div class="layer">
+                    <h3>Music Player</h3>
+                    <p>This Python program extracts musical notes from text files and uses the 'musicalbeeps' library to play back the melody. A demonstration of Python's power in working with media files. Check it out on my GitHub below!
+                    </p>
+                        <a href="https://github.com/amgadelgamal/Jou-an.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="rca.jpeg">
+                <div class="layer">
+                    <h3>9-bit Ripple Carry Adder</h3>
+                    <p>An implementation of a 9-bit ripple carry adder using Quartus, VHDL, and an FPGA board. This project demonstrates the practical application of digital system design principles. Check it out on my GitHub below!
+                    </p>
+                        <a href="https://github.com/amgadelgamal/Jou-an.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for  (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for  (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+
+</html>
