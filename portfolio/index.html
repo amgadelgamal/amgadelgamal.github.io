@@ -7,13 +7,13 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
+    
       gtag('config', 'G-1V46L8TB9C');
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amgad Elgamal - Personal Portfolio</title>
+    <title>Personal Portofolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0fce78ac1d.js" crossorigin="anonymous"></script>
 </head>
@@ -41,26 +41,62 @@
 </div>
 
 <!-----------------about------------------>
+
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
                 <img src="pic3.jpeg">
             </div>
+            <!-----------------About Me Text------------------>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p style="text-align: justify;">
-                    👋  Hey! I'm Amgad Elgamal, a Software Engineering student at McGill University, eagerly pursuing a deep dive into the intricacies of software systems, data structures, and algorithmic challenges. My academic journey is rich with practical engagements and theoretical insights.<br><br>
-                    🖥️  At Google, I am currently involved in developing open-source code samples to enhance the functionality of Chat App SDKs, particularly focusing on AI-powered chatbots, significantly improving developer experiences.<br><br>
-                    📚  In my academic pursuits at McGill University, I specialize in leveraging advanced programming languages and frameworks to tackle complex software challenges and enhance system functionalities.<br><br>
-                    🚀  My previous experiences include a dynamic role at Ericsson as a Machine Learning Intern, where I spearheaded projects to enhance model efficiency and operational processes, and at University of Sherbrooke, where I was deeply involved in data science initiatives focused on medication deprescription research.<br><br>
-                    💼  My role at CodeJam as a Software Developer for the Website Team involves crafting seamless user experiences and integrating real-time competition features, showcasing my commitment to enhancing digital interactions.<br><br>
-                    Explore my portfolio to see the projects that have shaped my skills and professional outlook.
-                </p>
+                <p style="text-align: justify;"> <br><br> 👋  Hey there! I'm Amgad Elgamal, a second year Software Engineering student at McGill University, with eyes set on graduating in 2026. My journey is fueled by the mesmerizing world of coding, the depths of algorithms, and of course, ☕ a whole lot of coffee.<br><br>
+                    🖥️  During my time at the university, I've been fortunate to dive deep into a myriad of projects, getting my hands dirty with Python, Java, C++, HTML, CSS, and JavaScript. These experiences have been enriched not just by my academic pursuits but also through my professional engagements.<br><br>
+                    🔍  Recently, I wrapped up an exciting internship at the Ambient Intelligence Lab at Université de Sherbrooke. Here, I played a pivotal role in a long-term research project centered around medication deprescription. I also had the privilege of dissecting sensor data from hundreds of millions of JSON and CSV files and was at the forefront of implementing LSTM-based predictive analytics, leveraging tools like Keras and TensorFlow. It was a journey filled with challenges, but the learnings and rewards were unparalleled.<br><br>
+                    🚀  On a lighter note, outside the lab's confines, you'll find me as an active part of the McGill Rocket Team, contributing to the development of their flight control software. When I'm not engrossed in tech, I'm either battling it out at hackathons, navigating micro-mice through intricate mazes, or simply chilling and daydreaming about the future of tech.<br><br>
+                    💼  As of August 2023, I embarked on a new adventure with BeauT – a Beauty and Tech Startup based in Montreal. As a Software Engineer Intern, I've been: <br><br>
+                    
+                    <ul style="padding-left: 30px;">
+                      <li>Harnessing the power of the MERN stack to craft a CMS from the ground up.</li>
+                      <li>Using TensorFlow and OpenCV to amplify the facial recognition capabilities of BeauT's platform.</li>
+                      <li>Ensuring top-notch data security through JWT authentication and MongoDB's encryption-at-rest, ensuring our client's peace of mind.</li>
+                    </ul><br>
+                    📂  That's just a glimpse into my journey! I'd love for you to explore my portfolio and dive deeper into the projects that have defined my academic and professional trajectory. <br><br>
+                    </p>
+
+                    <div class="tab-titles">
+                        <P class="tab-links active-link" onclick="opentab('skills')">Skills</P>
+                        <P class="tab-links" onclick="opentab('experience')">Experience</P>
+                        <P class="tab-links" onclick="opentab('education')">Education</P>
+                    </div>
+                    <!---------------Skills----------->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Data Science</span><br>Data Analysis & Machine-Learning/Deep-Learning</li>
+                        </ul>
+                    </div>
+                     <!---------------Experience----------->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2023 - Present</span><br>Software Engineer Intern at Beau-T</li>
+                            <li><span>May 2023 - August 2023</span><br>Data Science Intern at Université de Sherbrooke</li>
+                        </ul>
+                    </div>
+                    <!---------------Education----------->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>BEng in Software Engineering Co-op at McGill University</li>
+                            <li><span>2020 - 2022</span><br>DEC in Health Sciences at Champlain College</li>
+                        </ul>
+                    </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-------------------------services-------------------------->
 
 <div id="services">
     <div class="container">
@@ -69,55 +105,79 @@
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
-                <p>Specializing in creating intuitive, user-friendly web designs that blend aesthetics with functionality to enhance user engagement and drive business outcomes.</p>
+                <p>Offering bespoke web design services, I focus on creating 
+                    intuitive, user-friendly interfaces. Combining aesthetic 
+                    appeal with functionality, I ensure your website not only 
+                    looks great, but also optimizes user engagement and drives 
+                    results.</p>
             </div>
             <div>
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h2>Data Analysis</h2>
-                <p>I apply advanced analytical skills to extract actionable insights from complex data sets, supporting data-driven decision making.</p>
+                <p>Specializing in data analysis, I extract valuable insights 
+                    from complex datasets. By transforming raw data into 
+                    meaningful information, I empower your business to make 
+                    data-driven decisions and optimize performance.</p>
             </div>
             <div>
                 <i class="fa-solid fa-server"></i>
-                <h2>Machine Learning</h2>
-                <p>Developing sophisticated machine learning models to automate processes and improve decision accuracy across various applications.</p>
+                <h2>Machine-Learning</h2>
+                <p>Leveraging the power of machine learning, I build intelligent
+                     models that learn, adapt, and improve over time. I help 
+                     unlock new levels of understanding and automation for your
+                      business, pushing the boundaries of what's possible.</p>
             </div>
         </div>
     </div>
 </div>
 
+<!-----------------------------------Portfolio----------------------------->
+
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">Portfolio</h1>
+        <!----<div id="progress-message">
+            <h2> Work in progress... ⏳😊</h2>
+        </div>---->
+        <!----<div class="work-list" id="blurred-content">--->
         <div class="work-list">
             <div class="work">
                 <img src="cloudnerd-demo.png">
                 <div class="layer">
                     <h3>Weather Forecasting App</h3>
-                    <p>Cloudnerd is a machine learning-based web application that predicts the weather by analyzing cloud patterns. Explore this innovative tool!</p>
-                    <a href="https://welcome-to-cloudnerd.web.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Cloudnerd is a machine learning based web application that predicts the weahter by scanning clouds.
+                        Give it a try below!</p>
+                        <a href="https://welcome-to-cloudnerd.web.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
                 </div>
             </div>
             <div class="work">
                 <img src="shazoom.png">
                 <div class="layer">
                     <h3>Lyric Recognition Web App</h3>
-                    <p>Shazoom uses advanced speech recognition to identify songs from user-sung inputs, offering a unique interactive experience.</p>
-                    <a href="https://github.com/amgadelgamal/Shazoom" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Shazoom is a speech recognition user interface that identifies user-sung songs
+                        and retrieves top matches. Give it a try on my GitHub below!
+                    </p>
+                        <a href="https://github.com/amgadelgamal/Shazoom" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
                 </div>
             </div>
             <div class="work">
                 <img src="chatbot.png">
                 <div class="layer">
                     <h3>Diet-Based Restaurant Locator Chatbot</h3>
-                    <p>Jou'an assists users in finding restaurants that match their dietary preferences, showcasing real-time integration and user interaction.</p>
-                    <a href="https://github.com/amgadelgamal/Jou-an" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Jou'an is an interactive chatbot that identifies user dietry preferences and locates
+                        nearby suitable restaurants. Give it a try on my GitHub below!
+                    </p>
+                        <a href="https://github.com/amgadelgamal/Jou-an" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
                 </div>
             </div>
         </div>
-        <a href="https://amgadelgamal.github.io/seemore" class="btn">See more</a>
     </div>
+    <a href="https://amgadelgamal.github.io/seemore" class="btn">See more</a>
 </div>
-
+<!----------------------------------------------Contact---------------------------------->
 <div id="contact">
     <div class="container">
         <div class="row">
@@ -126,7 +186,7 @@
                 <p><i class="fa-solid fa-paper-plane"></i> <a href=mailto:amgad.elgamal@mail.mcgill.ca target="_blank">amgad.elgamal@mail.mcgill.ca</p></a>
                 <div class="social-icons">
                     <a href="https://github.com/amgadelgamal" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/amgadelgamal" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/amgadelgamal" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
                 </div>
                 <a href="Amgad Elgamal CV.pdf" download class="btn btn2">My Resume</a>
             </div>
@@ -141,9 +201,17 @@
             </div>
         </div>
     </div>
+    <div class="copyright">
+        <p>Copyright © Amgad Elgamal.</p>
+    </div>
 </div>
 
+
+
+
+
 <script>
+
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     function opentab(tabname) {
@@ -159,31 +227,35 @@
 </script>
 
 <script>
+
     var sidemenu = document.getElementById("sidemenu");
+
     function openmenu(){
-        sidemenu.style.right = "0";
+        sidemenu.style.right = "0"
+
     }
     function closemenu(){
-        sidemenu.style.right = "-200px";
+        sidemenu.style.right = "-200px"
+        
     }
 </script>
-
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby_Q_MqixLYnh7jYrYwn5slxrgSCucCW-Whu3NbN7Rk_Q33W-XsQwzSC-yEn4fsflVb/exec';
-    const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById("msg");
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_Q_MqixLYnh7jYrYwn5slxrgSCucCW-Whu3NbN7Rk_Q33W-XsQwzSC-yEn4fsflVb/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
     form.addEventListener('submit', e => {
-      e.preventDefault();
+      e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message sent successfully";
+            msg.innerHTML = "Message sent successfully"
             setTimeout(function(){
                 msg.innerHTML = ""
-            }, 5000);
-            form.reset();
+            }, 5000)
+            form.reset()
         })
-        .catch(error => console.error('Error!', error.message));
-    });
+        .catch(error => console.error('Error!', error.message))
+    })
 </script>
 </body>
 </html>
